@@ -1,4 +1,4 @@
-name: r8s
+name: guamp 
 
 on:
   workflow_dispatch:
