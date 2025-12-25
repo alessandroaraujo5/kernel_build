@@ -40,11 +40,6 @@ jobs:
         run: |
           git clone --depth=1 ${{ env.KERNELSU_SOURCE }} -b ${{ env.KERNELSU_BRANCH }} KernelSU
 
-      - name: Apply KernelSU Patch
-        run: |
-          cd kernel-source
-          ../KernelSU/scripts/apply_patch.sh
-
       - name: Enable KernelSU config flags
         run: |
           cd kernel-source
